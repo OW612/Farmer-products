@@ -1,0 +1,980 @@
+@media (min-width: 1440px) {
+    #container{
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #FBF9F6;
+        width: 100%;
+        height: 4059px;
+        display: grid;
+        grid-template-rows: 0px 874px 800px 630px 559px 300px 340px 141px 415px;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-areas: "headleft headlogo headlogo headright"
+                      "header header header header"  
+                      "product product product product"
+                      "production production production production"
+                      "recipes recipes recipes recipes"
+                      "shops shops shops shops"
+                      "news news news news"
+                      "subscribe1 subscribe1 subscribe2 subscribe2"
+                      "footer footer footer footer"
+    }
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------*/
+/*Шапка сайта*/
+    #head{
+        position: sticky;
+        z-index: 100;
+        top: 0;
+        width: 400%;
+        height: 188px;
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%); 
+        font-size: 16px;
+        font-family: "Inter";
+    }
+    #headleft{
+        grid-area: headleft;
+        width: 42%;
+        height: 123px;
+        float: left;
+        padding-top: 65px;
+    }
+    #headleft a{
+        margin-left: 15%;
+    }
+    #headleft button{
+        display: none;
+    }
+    #headlogo{
+        position: absolute;
+        left: 42%;
+        grid-area: headlogo;
+        width: 16%;
+        height: 188px;
+    }
+    #headright{
+        grid-area: headright;
+        width: 42%;
+        height: 123px;
+        float: right;
+        padding-top: 65px;
+    }
+    #headright a{
+        margin-left: 90px;
+    }
+
+    #head .imglogo{
+        background-image: url(../img/LOGO.png);
+        background-size: 100%;
+        width: 132px;
+        height: 132px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #head button{
+        background-image: url(../img/Search-symbol.png);
+        background-size: 100%;
+        position: absolute;
+        right: 12px;
+        top: 30%;
+        width: 41px;
+        height: 41px;
+        border-radius: 50%;
+        background-color: white; 
+        border: none;
+    }
+    #head .burger-menu, .itemsBM{
+        display: none;
+    }
+/* ----------------------------------------------------------------------------------------------------------------------------------------*/
+/*Первая*/
+    #header{
+        grid-area: header;
+        background-image: url(../img/MainImage.jpg);    
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    #header table{
+        margin-top: 18%;
+        width: 100%;
+        height: 30%;
+        color: white;
+        text-align: center;
+    }
+    #header .text1{
+        font-family: "Andantino script";
+        font-size: 45px;
+    }
+    #header .text2{
+        font-family: "Blogger sans";
+        font-size: 108px;
+        -webkit-text-stroke: 0.5px #0057A5;
+    }
+    #header .text3{
+        font-family: "Inter";
+        font-size: 24px;
+        padding: 0 35%;
+    }
+/* ----------------------------------------------------------------------------------------------------------------------------------------*/
+/*Блок продуктов*/
+    #product{
+        grid-area: product;
+        background-image: url(../img/product/other/backgroundProduct.jpg);
+        background-size: 100%;
+        width: 1440px;
+        height: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-rows: 45% 55%;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-areas: "anotherProd firstProd infProd1 switchProd"
+                            "anotherProd firstProd infProd2 switchProd"
+    }
+
+    #product .anotherProd{
+        grid-area: anotherProd;
+        text-align: center;
+    }
+    #product .IMGanotherProduct{
+        width: 146px;
+        height: 288px;
+        margin-top: 120px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        filter: drop-shadow(0px 20px 10px rgba(0,0,0,0.3));
+    }
+    #product .anotherMainText{
+        font-family: "Blogger sans";
+        font-size: 42px;
+        color: #43464A;
+    }
+    #product .anotherText{
+        font-family: "Inter";
+        font-size: 13.5px;
+        color: #8F9399;
+    }
+    
+    #product .firstProd{
+        grid-area: firstProd;
+        text-align: center;
+    }
+    #product .IMGfirstProduct{
+        width: 244px;
+        height: 481px;
+        margin-top: 70px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        filter: drop-shadow(0px 20px 10px rgba(0,0,0,0.3));
+        transition: transform .8s ease-in-out;
+    }
+
+    #product .infProd1{
+        grid-area: infProd1;
+        padding-top: 70px;
+    }
+    #product .infProdMainText{
+        font-family: "Blogger sans";
+        font-size: 58px;
+        color: #43464A;
+    }
+    #product .infProdText{
+        font-family: "Inter";
+        font-size: 18px;
+        color: #43464A;
+    }
+
+    #product .infProd2{
+        grid-area: infProd2;
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-rows: 20% 80%;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "weight fat"
+                            "slider slider"
+    }
+    #product .weight{
+        grid-area: weight;
+    }
+    #product .IMGweight{
+        background-image: url(../img/product/other/symbol-weight.png);
+        background-size: 100%;
+        width: 40px;
+        height:40px;
+        float: left;
+    }
+    #product .fat{
+        grid-area: fat;
+    }
+    #product .IMGfat{
+        background-image: url(../img/product/other/symbol-fat.png);
+        background-size: 100%;
+        width: 40px;
+        height:40px;
+        float: left;
+    }
+    #product .textName{
+        font-family: "Inter";
+        font-size: 10px;
+        color: #43464A;
+    }
+    #product .value{
+        font-family: "Blogger sans";
+        font-size: 29px;
+        color: #43464A;
+    }
+    #product .slider{
+        grid-area: slider;
+    }
+
+    #product .switchProd{
+        grid-area: switchProd;
+    }
+    #product .milk{
+        width: 200px;
+        height: 60px;
+        margin-top: 100px;
+        margin-left: 70px;
+    }
+    #product .IMGswitchMilk{
+        background-image: url(../img/product/other/symbol-milk.jpg);
+        background-size: 100%;
+        width: 59px;
+        height: 59px;
+        border-radius: 50%;
+        border: none;
+    }
+    #product .cheese{
+        width: 200px;
+        height: 60px;
+        margin-top: 130px;
+        margin-left: 20px;
+    }
+    #product .IMGswitchCheese{
+        background-color: white;
+        background-image: url(../img/product/other/symbol-cheese.png);
+        background-size: 100%;
+        width: 59px;
+        height: 59px;
+        border-radius: 50%;
+        border: none;
+    }
+    #product .butter{
+        width: 200px;
+        height: 60px;
+        margin-top: 120px;
+        margin-left: 70px;
+    }
+    #product .IMGswitchButter{
+        background-image: url(../img/product/other/symbol-butter.jpg);
+        background-size: 100%;
+        width: 59px;
+        height: 59px;
+        border-radius: 50%;
+        border: none;
+    }
+    #product .switchText{
+        font-family: "Inter";
+        font-size: 16px;
+        color: #43464A;
+        float: left;
+        width: 120px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------*/
+/*Информационный блок о производстве*/
+    #production{
+        grid-area: production;
+        background-color: #FBF9F6;
+    }
+    #production table{
+        width: 100%;
+        height: 100%;
+    }
+    #production td{
+        text-align: center;
+    }
+    #production .td1{
+        width: 100%;
+        height: 80px;
+        padding: 0 25%;
+        font-family: "Blogger sans";
+        font-size: 58px;
+        color: #43464A;
+    }
+    #production .td2{
+        width: 100%;
+        height: 30px;
+        font-family: "Inter";
+        font-size: 15px;
+        color: #747D85;
+    }
+    #production .td3{
+        width: 100%;
+        height: 260px;
+        display: flex;
+        justify-content: center;
+    }
+    #production .img1{
+        background-image: url(../img/production/production1.png);
+        background-size: 100%;
+        margin: 5% 2.2%;
+        width: 410px;
+        height: 261px;
+        border-radius: 20px;
+        float: left;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        text-align: left;
+    }
+    #production .img2{
+        background-image: url(../img/production/production2.png);
+        background-size: 100%;
+        margin: 5% 2.2%;
+        width: 410px;
+        height: 261px;
+        border-radius: 20px;
+        float: left;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        text-align: left;
+    }
+    #production .img3{
+        background-image: url(../img/production/production3.png);
+        background-size: 100%;
+        margin: 5% 2.2%;
+        width: 410px;
+        height: 261px;
+        border-radius: 20px;
+        float: left;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        text-align: left;
+    }
+    #production .prodMainText{
+        font-family: "Blogger sans";
+        font-size: 42px;
+        color: #43464A;
+        padding-left: 10%;
+        margin-top: 30%;
+    }
+    #production .prodText{
+        font-family: "Inter";
+        font-size: 15px;
+        color: #747D85;
+        padding-left: 10%;
+        padding-right: 20%;
+        margin-top: 5%;
+    }
+    #production .gradientIMG{
+        display: inline-block;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #F4F3F2 100%);
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+/* ----------------------------------------------------------------------------------------------------------------------------------------*/
+/*Блок с рецептами*/
+    #recipes{
+        grid-area: recipes;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 30% 70%;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-areas: "textrecipe recipe1 recipe2 recipe3"
+                            "BTNrecipes recipe1 recipe2 recipe3"
+    }
+    #recipes .maintext{
+        font-family: "Blogger sans";
+        font-size: 58px;
+        color: #43464A;
+        padding-left: 6%;
+    }
+    #recipes .textrecipe{
+        grid-area: textrecipe;
+        padding-top: 8%;
+    }
+    #recipes .textINFrecipe{
+        font-family: "Inter";
+        font-size: 15px;
+        color: #747D85;
+        padding-left: 6%;
+    }
+    #recipes .BTNrecipes{
+        grid-area: BTNrecipes;
+        padding-left: 6%;
+        padding-top: 8%;
+    }
+    #recipes button{
+        background-image: url(../img/recipes/symbolRecipes.jpg);
+        background-size: 100%;
+        border-radius: 45px;
+        font-family: "Inter";
+        font-size: 13px;
+        color: white;
+        width: 60%;/*190px;*/
+        height: 50px;
+        border: none;
+    }
+
+/*Аккордеон рецептов*/
+    #recipes .accordion__item {
+        margin-bottom: 0.5rem;
+        border-radius: 0.25rem;
+        box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 15%);
+        font-family: "Inter";
+        font-size: 16px;
+    }
+
+    #recipes .accordion__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        padding: 0.75rem 1rem;
+        color: #fff;
+        font-weight: 500;
+        background-color: #0057A5;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+        cursor: pointer;
+        transition: background-color 0.2s ease-out;
+    }
+
+    #recipes .accordion__header::after {
+        flex-shrink: 0;
+        width: 1.25rem;
+        height: 1.25rem;
+        margin-left: auto;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-size: 1.25rem;
+        content: "";
+        transition: transform 0.2s ease-out;
+    }
+
+    #recipes .accordion__item_show .accordion__header::after,
+    #recipes .accordion__item_slidedown .accordion__header::after {
+        transform: rotate(-180deg);
+    }
+
+    #recipes .accordion__header:hover {
+        background-color: #0b5ed7;
+    }
+
+    #recipes .accordion__item:not(.accordion__item_show) .accordion__header {
+        border-bottom-right-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
+    }
+
+    #recipes .accordion__content {
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        border-bottom-right-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
+        font-family: "Inter";
+        font-size: 14px;
+    }
+
+    #recipes .accordion__content a {
+        position: relative;
+        display: block;
+        padding: 0.5rem 1rem;
+        color: #212529;
+        text-decoration: none;
+        background-color: #ffffff;
+        border: 1px solid rgb(0 0 0 / 12.5%);
+    }
+
+    #recipes .accordion__content a:last-child {
+        border-bottom-right-radius: inherit;
+        border-bottom-left-radius: inherit;
+    }
+
+    #recipes .accordion__content a:hover {
+        background-color: #f8f9fa;
+    }
+
+    #recipes .accordion__item:not(.accordion__item_show) .accordion__body {
+        display: none;
+    }
+/*!Аккордеон рецептов*/
+
+/*Размер слайдера*/   
+    #recipes .slide{
+        width: 300%;/*1000px;*/
+        /* Положение элемента устанавливается относительно его исходной позиции: */
+        position: relative;
+        /* Центрируем по горизонтали: */
+        margin: auto;
+        height: 550px;
+        background-color: #ffebcd;
+        border-radius: 80px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+/*--------------------*/
+    #recipes .recipe1{
+        grid-area: recipe1;
+    }
+    #recipes .IMGrecipe1{
+        background-image: url(../img/recipes/recipe1.png);
+        background-size: 100%;
+        width: 380px;
+        height: 510px;
+        border-radius: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2%;
+        filter: grayscale(.8);
+    }
+    #recipes .recipe1INF{
+        background: linear-gradient(180deg, rgba(151, 132, 120, 0.3) 2.08%, rgba(151, 132, 120, 0) 43.6%, #7E6650 100%);
+        border-radius: 30px;
+        width: 100%;
+        height: 100%;
+    }
+    #recipes .recipe2{
+        grid-area: recipe2;
+    }
+    #recipes .IMGrecipe2{
+        background-image: url(../img/recipes/recipe2.png);
+        background-size: 100%;
+        width: 380px;
+        height: 510px;
+        border-radius: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2%;
+        filter: grayscale(0.8);
+    }
+    #recipes .recipe2INF{
+        background: linear-gradient(180deg, rgba(56, 100, 110, 0) 0%, #38646E 91.67%);
+        border-radius: 30px;
+        width: 100%;
+        height: 100%;
+    }
+    #recipes .recipe3{
+        grid-area: recipe3;
+    }
+    #recipes .IMGrecipe3{
+        background-image: url(../img/recipes/recipe3.png);
+        background-size: 100%;
+        width: 380px;
+        height: 510px;
+        border-radius: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2%;
+        filter: grayscale(0.8);
+    }
+    #recipes .IMGrecipe1:hover, #recipes .IMGrecipe2:hover, #recipes .IMGrecipe3:hover{
+        filter: none;
+        opacity: 1;
+    }
+    #recipes .recipe3INF{
+        background: linear-gradient(180deg, rgba(151, 132, 120, 0.3) 2.08%, rgba(151, 132, 120, 0) 43.6%, #7E6650 100%);
+        border-radius: 30px;
+        width: 100%;
+        height: 100%;
+    }
+    #recipes .ownTimeBlock{
+        width: 100%;
+        height: 120px;
+        padding-top: 100%;
+    }
+    #recipes .timeRecipe{
+        font-family: "Inter";
+        font-size: 14px;
+        color: white;
+        margin-left: 20px;
+    }
+    #recipes .IMGtimeRecipe{
+        background-image: url(../img/recipes/symbolTimer.png);
+        background-size: 100%;
+        width: 17px;
+        height: 17px;
+        float: left;
+    }
+    #recipes .PRecipe{
+        font-family: "Inter";
+        font-size: 24px;
+        color: white;
+        margin-left: 20px;
+    }
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------*/
+/*Блок с магазинами*/
+    #shops{
+        grid-area: shops;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #FBF9F6;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 60% 40%;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-areas: "textshop shop1 shop2 shop3"
+                            "map shop1 shop2 shop3"
+    }
+    #shops .textshop{
+        grid-area: textshop;
+        padding-top: 8%;
+    }
+    #shops .maintext{
+        font-family: "Blogger sans";
+        font-size: 58px;
+        color: #43464A;
+        padding-left: 6%;
+    }
+    #shops .textINFshop{
+        font-family: "Inter";
+        font-size: 15px;
+        color: #747D85;
+        padding-left: 6%;
+    }
+    #shops .map{
+        grid-area: map;
+        font-family: "Inter";
+        font-size: 16px;
+        color: #425261;
+        padding-left: 6%;
+        padding-top: 8%;
+
+    }
+    #shops .shop1{
+        grid-area: shop1;
+    }
+    #shops .IMGshop1{
+        background-image: url(../img/shops/shop1.jpg);
+        width: 302px;
+        height: 172px;
+        border-radius: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 14%;
+    }
+    #shops .shop2{
+        grid-area: shop2;
+    }
+    #shops .IMGshop2{
+        background-image: url(../img/shops/shop2.jpg);
+        width: 302px;
+        height: 172px;
+        border-radius: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 14%;
+    }
+    #shops .shop3{
+        grid-area: shop3;
+    }
+    #shops .IMGshop3{
+        background-image: url(../img/shops/shop3.jpg);
+        width: 302px;
+        height: 172px;
+        border-radius: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 14%;
+    }
+    #shops .IMGshop1:hover, #shops .IMGshop2:hover, #shops .IMGshop3:hover{
+        background-size: 100%;
+        transition: 1s;
+        width: 350px;
+        height: 200px;
+    }
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------*/
+/*Новостной блок*/
+    #news{
+        grid-area: news;
+        margin-left: auto;
+        margin-right: auto;
+        background-color:white;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 25% 25% 50%;
+        grid-template-areas: "IMGnewsblock new1 new2"
+                            "IMGnewsblock new1 new3" 
+    }
+    #news .new1{
+        padding: 8.2% 6%;
+        grid-area: new1;
+    }
+    #news .new2{
+        padding: 4% 6%;
+        grid-area: new2;
+    }
+    #news .new3{
+        padding: 4% 6%;
+        grid-area: new3;
+    }
+    #news .date-text{
+        color: #828383;
+        font-family: "Inter";
+        font-size: 13px;
+    }
+    #news .headNews-text{
+        font-family: "Inter";
+        font-size: 24px;
+        color: #43464A;
+    }
+    #news .IMGnewsblock{
+        grid-area: IMGnewsblock;
+        padding-top: 25%;
+    }
+    #news .IMGnews{
+        width: 281px;
+        height: 238px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -50px;
+    }
+    #news .more_inf_news{
+        font-family: "Inter";
+        font-size: 14px;
+        color: #8F9399;
+    }
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------*/
+/*Блок для подписки*/
+    #subscribe1{
+        grid-area: subscribe1;   
+        background-color: #0057A5;
+        color: white;
+        padding: 0 20%;
+    }
+    #subscribe1 H5{
+        font-family: "Blogger sans";
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 110%;
+    }
+
+    #subscribe2{
+        grid-area: subscribe2;   
+        background-color: #0057A5;
+    }
+    #subscribe2 input{
+        height: 35%;
+        width: 55%;
+        margin-top: 3.5%;
+        background: #00417A;
+        opacity: 0.3;
+        border-radius: 75px;
+        border: 0px;
+        float: left;
+    }
+    #subscribe2 input::placeholder{
+        font-size: 13px;
+        color: white;
+        position: absolute;
+        font-family: "Inter";
+        margin-left: 10%;
+        margin-top: 0.5%;
+
+    }
+    #subscribe2 input:focus{
+        font-size: 13px;
+        padding: 0% 5%;
+        color: white;
+        font-family: "Inter";
+    }
+    #subscribe2 button{
+        position: absolute;
+        z-index: 1;
+        height: 50px;
+        width: 15%;/*220px;*/
+        background: white;
+        border-radius: 75px;
+        color: #43464A;
+        border: none;
+        margin-top: 1.8%;/*44px;*/
+        margin-left: 20%;/*250px;*/
+    }
+    #subscribe2 img{
+        display: none;
+    }
+    /*Всплыввающая подсказка*/
+    #tooltip {
+        z-index: 9999;
+        position: absolute;
+        display: none;
+        top:0px;
+        left:0px;
+        width: 250px;
+        background-color: #559bd9;
+        padding: 5px 10px 5px 10px;
+        font-family: "Inter";
+        color: #000;
+        border-radius: 5px; 
+        box-shadow: 0 1px 2px #555;
+      }
+      /*--------------------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------------------------------*/
+/*Подвал*/
+    #footer{
+        grid-area: footer;
+
+        margin-left: auto;
+        margin-right: auto;
+        background-color:white;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-areas: "nav nav nav nav"
+                            "void number address socialmedia"
+                            "downtext downtext downtext downtext"
+    }
+    #footer .nav{
+        grid-area: nav;
+        background-color: white;
+        font-family: "Inter";
+        font-size: 16px;
+        color: #43464A;
+        padding: 4% 10%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    #footer .imglogoNav1{
+        position: absolute;
+        background-image: url(../img/LOGO.png);
+        background-size: 100%;
+        width: 132px;
+        height: 132px;
+        margin-left: -36px;
+        margin-top: -140px;
+    }
+    #footer a{
+        margin-left: 80px;
+    }
+    #footer a.socialmedia{
+        margin-left: 10px;
+    }
+
+    #footer .number{
+        grid-area: number;
+    }
+    #footer .numberP1{ 
+        color: #8F9399;
+        font-family: "Inter";
+        font-size: 13px;
+    }
+    #footer .numberP2{ 
+        color: #43464A;
+        font-family: "Blogger sans";
+        font-size: 46px;
+        margin-top: -10px;
+    }
+
+    #footer .address{
+        grid-area: address;
+        font-family: "Inter";
+    }
+    #footer .addressP1{
+        color: #8F9399;
+        font-size: 13px;
+    }
+    #footer .addressP2{
+        color: #43464A;
+        font-size: 16px;
+        margin-top: -10px;
+    }
+
+    #footer .socialmedia{
+        grid-area: socialmedia;
+    }
+
+    #footer .downtext{
+        grid-area: downtext;
+        font-family: "Inter";
+        color: #8F9399;
+        padding-top: 7%;
+    }
+    #footer br{
+        display: none;
+    }
+    #footer .adown{
+        margin-left: 3%;
+        color: #8F9399;
+    }
+    #footer .spandown{
+        float: right; 
+        margin-right: 3%;
+    }
+    
+/*Реклама*/
+    .ADactive{
+        position: fixed;
+        overflow: hidden;
+        display: block;
+        bottom: 20px;
+        left: 25%;
+        width: 50%;
+        z-index: 99999;
+        background: #c2c2c2;
+        font-family: "Inter";
+        font-size: 14px;
+        line-height:1.4em;
+        border: 1px solid #559bd9;
+        border-radius: 7px;
+        padding: 10px 15px 10px 10px; /*Отступы от краев до текста*/
+        min-height: 100px;
+        box-shadow: 0 0 16px rgba(0,0,0,0.5);
+    }
+    #sideroll .text{
+        padding-right: 150px;
+        height: 50%;
+    }
+    #sideroll img{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        right: 40px;
+        top: 10%;
+    }
+    .ADdisactive{
+        display: none;
+    }
+    #sideroll .roll-close {
+        display: block;
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 15px;
+        text-shadow: #000 0px 0px 1px;
+    }
+    #sideroll h4{
+        font-size:18px;
+        margin:0 0 10px;
+        color: #0057A5;
+        padding-right: 150px;
+    }
+/*---------------------------------------------------------------------------------------------------*/
+}

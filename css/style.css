@@ -1,0 +1,136 @@
+/*Подключение стилей*/
+@import "desktop.css";
+@import url("desktop.css");
+@import "tablet.css";
+@import url("tablet.css");
+@import "mobile.css";
+@import url("mobile.css");
+
+/*Подлкючение шрифтов*/
+@font-face {
+    font-family: 'Blogger sans';
+    src: url("../font/blogger-sans.light.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Inter';
+    src: url("../font/Inter-LightBETA.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Andantino script';
+    src: url("../font/Andantino script.ttf") format("truetype");
+}
+
+/*Общие стили*/
+a, a:active, a:hover{
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+    color: black;
+    cursor: pointer;
+}
+.acolor2, .acolor2:active, .acolor2:hover{
+    color: #43464A;
+}
+button{
+    cursor: pointer;
+}
+/*Задать изменение прозрачности при наведении на картинки*/
+.img1:hover, .img2:hover, .img3:hover, .IMGrecipe1:hover, .IMGrecipe2:hover, .IMGrecipe3:hover, .IMGnews:hover, button:hover{
+    opacity: 0.8;
+}
+/*---------------------------------------*/
+/*Кнопка "Наверх"*/
+.btn-up {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: none;
+    z-index: 5;
+  }
+  .btn-up img{
+    position: relative;
+    margin-left: -6px;
+    margin-top: -1px;
+    width: 60px;
+    height: 60px;
+  }
+/*---------------------------------------*/
+/*Поле поиска*/
+.searchPlace, .searchPlace:focus{
+    display: none;
+    border: 1px solid #43464A;
+}
+.searchPlace.SPactive::placeholder{
+    font-family: "Blogger sans";
+    font-size: 24px;
+    color:white;
+}
+.searchPlace.SPactive{
+    display: block;
+    position: absolute;
+    width: 60%;
+    height: 50px;
+    top: 25%;
+    left: 20%;
+    background-color: #0057a5;;
+    color: white;
+    font-family: "Blogger sans";
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.8;
+}
+/*---------------------------------------*/
+
+
+/*Настройка слайдера*/
+/* Кнопки назад и вперёд: */
+.slide .previous, .slide .next {
+        /* Добавляет курсору иконку, когда тот оказывается над кнопкой: */
+        cursor: pointer;
+        /* Положение элемента задаётся относительно границ браузера: */
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        /* Оформление самих кнопок: */
+        color:#6e5d44;
+        font-weight: bold;
+        font-size: 16px;
+        /* Плавное появление фона при наведении курсора: */
+        transition: 0.6s ease;
+        /* Скругление границ: */
+        border-radius: 0 3px 3px 0;
+}
+.slide .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+}
+/* Анимация слайдов: */
+.slider .item {
+        animation-name: fade;
+        animation-duration: 1.5s;
+}
+/*--------------------*/
+
+/*Оформление гипперссылок*/
+.hyperlink{
+    text-decoration-line: underline !important;
+}
+.hyperlink:hover{
+    color: #0057a5 !important;
+    text-decoration-line: underline !important;
+}
+.hyperlink:active{
+    color: #ff0000 !important;
+    text-decoration-line: underline !important;
+}
+.hyperlink:focus{
+    color: #8400ff !important;
+}
+
+#product .IMGfirstProduct:hover{/*Повернуть изображение при наведении*/
+    transform: rotate(360deg);
+}

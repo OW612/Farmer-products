@@ -1,0 +1,342 @@
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <meta name="Author" lang="ru" content="Матыс Евгений">
+	    <title>Фермерские продукты "Долюбово"</title>
+	    <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!--Файл с анимацией-->
+        <link type="Image/x-icon" href="img/LOGO.ico" rel="icon">
+    </head>
+    <body onload="slid()">
+        <div id="container">
+            <button id="btn-up" class="btn-up">
+                <img src="img/BTNup.png" alt="Наверх" title="Наверх">
+            </button>
+            
+            <!--Шапка-->
+            <header id="head">
+                <div id="headleft">
+                        <!--Бургер-меню-->
+                        <div class="burger-menu" id="burger-menu" onclick="Default()">
+                            <div class="lineBM"></div>
+                            <div class="lineBM"></div>
+                            <div class="lineBM"></div>
+                        </div>
+                        <div class="bodyBM" id="bodyBM">
+                            <ul class="itemsBM">
+                                <li><a href="#product" class="menu__item navigate">Продукция</a></li>
+                                <li><a href="#news" class="menu__item navigate">О бренде</a></li>
+                                <li><a href="#production" class="menu__item navigate">Производство</a></li>
+                                <li><a href="#recipes" class="menu__item navigate">Рецепты</a></li>
+                                <li><a href="#footer" class="menu__item navigate">Контакты</a></li>
+                                <li><a href="#shops" class="menu__item navigate">Где купить</a></li>
+                            </ul>
+                            <div class="burger-menu__overlay" id="BMoverlay"></div>
+                        </div>
+
+                        <a href="#product" class="hide navigate">Продукция</a>
+                        <a href="#news" class="hide navigate">О бренде</a>
+                        <a href="#production" class="hide navigate">Производство</a> 
+                </div>
+                <div id="headlogo">
+                        <a href="#"><div class="imglogo" title="ДОЛЮБОВО" alt="ДОЛЮБОВО"></div></a>
+                </div>
+                <div id="headright">
+                        <a href="#recipes" class="hide navigate">Рецепты</a>
+                        <a href="#footer" class="hide navigate">Контакты</a>
+                        <a href="#shops" class="hide navigate">Где купить</a>
+                    <button id="btnSearch" class="btnSearch"></button>
+                </div>
+                <input id="searchPlace" class="searchPlace" placeholder="Поиск..." type="text">
+            </header>
+
+            <!--Начальный раздел с названием и слоганом-->
+            <section id="header">
+                <table>
+                    <tr><td><p class="text1">Создавая традиции</p></td></tr>
+                    <tr><td><p class="text2">ФЕРМА «ДОЛЮБОВО»</p></td></tr>
+                    <tr><td><p class="text3">Бережно производим молочные продукты из натурального сырья</p></td></tr>
+                </table>
+            </section> 
+
+            <!--Раздел с продукцией-->
+            <section id="product">
+                <div class="anotherProd">
+                    <img src="img/product/anotherProduct.png" class="IMGanotherProduct" title="СЫР ФЕРМЕРСКИЙ ДОМАШНИЙ" alt="СЫР ФЕРМЕРСКИЙ ДОМАШНИЙ">
+                    <span class="anotherMainText">Фермерский</span>
+                    <p class="anotherText">Домашний</p>
+                </div>
+                <div class="firstProd">
+                    <img src="img/product/firstProduct.png" class="IMGfirstProduct" title="СЫР РОССИЙСКИЙ КЛАССИЧЕСКИЙ" alt="СЫР РОССИЙСКИЙ КЛАССИЧЕСКИЙ">
+                </div>
+                <div class="infProd1">
+                    <span class="infProdMainText">Российский классический</span>
+                    <p class="infProdText">Этот вкус знаком нам с детства, поэтому Ферма «Долюбово» крайне трепетно относится к производству сорта Российский.</p>
+                </div>
+                <div class="infProd2">
+                    <div class="weight">
+                        <div class="IMGweight"></div>
+                        <div class="textName">ВЕС НЕТТО:</div>
+                        <div class="value">200/300 гр</div>
+                    </div>
+                    <div class="fat">
+                        <div class="IMGfat"></div>
+                        <div class="textName">ЖИРНОСТЬ:</div>
+                        <div class="value">50%</div>
+                    </div>
+                    <div class="slider"></div>
+                </div>
+                <div class="switchProd">
+                    <div class="milk">
+                        <div class="switchText">Молочная продукция</div>
+                        <button class="IMGswitchMilk" onclick="Default()"></button>
+                    </div>
+                    <div class="cheese">
+                        <div class="switchText">Сыр</div>
+                        <button class="IMGswitchCheese" onclick="Default()"></button>
+                    </div>
+                    <div class="butter">
+                        <div class="switchText">Масло</div>
+                        <button class="IMGswitchButter" onclick="Default()"></button>
+                    </div>
+                </div>
+            </section>
+
+            <!--Раздел с информацией о производстве-->
+            <section id="production" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <table>
+                        <tr>
+                            <td class="td1"><p>Производство и качество молочных продуктов</p></td>
+                        </tr>
+                        <tr>
+                            <td class="td2"><p>Ферма «Долюбово» производит традиционные продукты, сочетая</p>
+                            <p>фермерское отношение c современными технологиями.</p></td>
+                        </tr>
+                        <tr>
+                            <td class="td3">
+                                <div class="img1" title="Молоко" alt="Молоко">
+                                    <div class="gradientIMG">
+                                        <div class="prodMainText">Молоко</div>
+                                        <div class="prodText">Только свежее молоко от коров из естественной среды обитания</div>
+                                    </div>
+                                </div>
+                                <div class="img2" title="Производство" alt="Производство">
+                                    <div class="gradientIMG">
+                                        <div class="prodMainText">Производство</div>
+                                        <div class="prodText">Используем современное итальянское оборудование Sfoggiatchh Srl</div>
+                                    </div>
+                                </div>
+                                <div class="img3" title="Контроль качества" alt="Контроль качества">
+                                    <div class="gradientIMG">
+                                        <div class="prodMainText">Контроль качества</div>
+                                        <div class="prodText">Соответсвует стандартам ISO 8196 - 3:2009</div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table> 
+            </section>
+        
+            <!--Раздел с рецептами-->
+            <section id="recipes">
+                <div class="textrecipe">
+                    <div class="maintext">Рецепты</div>
+                    <p class="textINFrecipe">52 отборных рецепта для всей семьи от мала до велика</p>
+                </div>
+                <div class="BTNrecipes">
+                    <button onclick="Default()"><span>ВСЕ РЕЦЕПТЫ</span></button>
+
+                    <!--Аккордион-->
+                    <div id="accordion" class="accordion" style="max-width: 30rem; margin: 1rem auto;">
+                        <div class="accordion__item">
+                          <div class="accordion__header">
+                            Список рецептов
+                          </div>
+                          <div class="accordion__body">
+                            <div class="accordion__content">
+                              <a href="#">Пицца марагрита на слоеном тесте</a>
+                              <a href="#">Паста Паппарделье</a>
+                              <a href="#">Пицца Лазаньетте</a>
+                            </div>
+                          </div>
+                        </div>                        
+                      </div>
+                </div>
+
+                <!--Слайдер-->
+                <div class="slide">
+                    <a class="previous" onclick="previousSlide()">&#10094;</a>
+                
+                    <a href="#"><div class="item recipe1">
+                    <div class="IMGrecipe1" title="Пицца маргарита" alt="Пицца маргарита">
+                        <div class="recipe1INF">
+                            <div class="ownTimeBlock">
+                                <div class="timeRecipe"><div class="IMGtimeRecipe"></div>22 минуты</div>
+                                <div class="PRecipe">Пицца маргарита на слоеном тесте</div>
+                            </div>
+                        </div>
+                    </div>
+                    </div></a>
+
+                    <a href="#"><div class="item recipe2">
+                    <div class="IMGrecipe2" title="Паста паппарделье" alt="Паста паппарделье">
+                        <div class="recipe2INF">
+                            <div class="ownTimeBlock">
+                                <div class="timeRecipe"><div class="IMGtimeRecipe"></div>22 минуты</div>
+                                <div class="PRecipe">Паста Паппарделье</div>
+                            </div>
+                        </div>
+                    </div>
+                    </div></a>
+
+                    <a href="#"><div class="item recipe3">
+                    <div class="IMGrecipe3" title="Пицца лазаньетте" alt="Пицца лазаньетте">
+                        <div class="recipe3INF">
+                            <div class="ownTimeBlock">
+                                <div class="timeRecipe"><div class="IMGtimeRecipe"></div>22 минуты</div>
+                                <div class="PRecipe">Пицца Лазаньетте</div>
+                            </div>
+                        </div>
+                    </div>
+                    </div></a>
+
+                    <a class="next" onclick="nextSlide()">&#10095;</a>
+                </div>
+            </section>
+
+            <!--Раздел с магазинами-->
+            <section id="shops">
+                <div class="textshop">
+                    <div class="maintext">Где купить</div>
+                    <p class="textINFshop">Вы можете найти магазины, в которых можно приобрести нашу продукцию</p>
+                </div>
+                <a href="#" class="map hyperlink">Карта магазинов</a>
+                <a href="#"><div class="shop1"><div class="IMGshop1" title="Пятёрочка" alt="Пятерочка"></div></div></a>
+                <a href="#"><div class="shop2"><div class="IMGshop2" title="Перекрёсток" alt="Перекрёсток"></div></div></a>
+                <a href="#"><div class="shop3"><div class="IMGshop3" title="Магнит" alt="Магнит"></div></div></a>
+            </section>
+
+            <!--Раздел новостей-->
+            <section id="news" data-aos="zoom-in">
+                <img src="img/news/new-14-05-2023.png" class="IMGNewsblock IMGnews" title="Новость" alt="Новость">
+                <div class="new1">
+                    <p class="date-text">14.05.2023</p>
+                    <h4 class="HeadNews-text"><a class="acolor2" href="#">Сыр Долюбово признали лучшим в России</a></h4>
+                    <p class="more_inf_news">Технология переработки молока не менее 
+                        важна для нас, мы используем современное оборудование...</p>
+                    <p class="more_inf_news"><a class="class1 hyperlink" href="#">Подробнее</a></p>
+                </div>
+                <div class="new2">
+                    <p class="date-text">13.05.2023</p>
+                    <h4 class="HeadNews-text"><a class="acolor2" href="#">В России стали меньше производить заменители сыра</a></h4>
+                </div>
+                <div class="new3">
+                    <p class="date-text">12.05.2023</p>
+                    <h4 class="HeadNews-text"><a class="acolor2" href="#">«Долюбово» — натуральней, лучше, вкуснее!</a></h4>
+                </div>
+            </section>
+
+            <!--Разделы с информацией о подписке-->
+            <section id="subscribe1">
+                <H5>Подпишитесь на рассылку, чтобы первыми узнавать о новостях и акциях</H5>
+            </section>
+            <section id="subscribe2">
+                <p data-tooltip="Вы будете подписаны на рассылку, все рассылки будут приходить на ваш email">
+                    <button onclick="validate(email)"><div class="subIMG"></div><span>ПОДПИСАТЬСЯ</span></button></p>
+                <div id="tooltip"></div>
+                <input class="input" id="email" placeholder="Введите ваш e-mail" type="text">
+            </section>
+
+            <!--Подвал-->
+            <footer id="footer" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <a href="#"><div class="imglogoNav1" title="ДОЛЮБОВО" alt="ДОЛЮБОВО"></div></a>
+                <div class="nav">
+                    <a href="#">Продукция</a>
+                    <a href="#">О бренде</a>
+                    <a href="#">Производство</a>
+                    <a href="#">Рецепты</a>
+                    <a href="#">Контакты</a>
+                    <a href="#">Обратная связь</a>
+                </div>
+                <div class="number">
+                    <p class="numberP1">По вопросам качества</p>
+                    <p class="numberP2">8 800 333 24 78</p>
+                </div>
+                <div class="address">
+                    <p class="addressP1">Физический адрес:</p>
+                    <p class="addressP2">192236, г. Санкт-Петербург, ул. Софийская, дом 8, корпус 1, строение 4, 
+                        помещение 14-Н, офис 7.07.</p>
+                </div>
+                <div class="socialmedia">
+                    <a href="https://vk.com/" class="socialmedia" target="_blank"><img src="img/footer/vk.png" alt="vk"></a>
+                    <a href="https://www.facebook.com/" class="socialmedia" target="_blank"><img src="img/footer/fb.png"></a>
+                    <a href="https://www.instagram.com/"  class="socialmedia" target="_blank"><img src="img/footer/inst.png"></a>
+                </div>
+                <div class="downtext">
+                    <a class="adown">2023 © Долюбово</a>
+                    <a class="adown">Политика обработки персональных данных</a><br>
+                    <span class="spandown">Создание и поддержка - INDEX</span>
+                </div>
+            </footer>
+
+             <!--Реклама-->
+            <div id="sideroll" class="ADactive">
+                <span id="close" class="roll-close">X</span>
+                <a href="https://music.yandex.by/home" target="_blank"><h4>Любимые треки, подкасты и плейлисты на Яндекс Музыке</h4>
+                <div class="text">Слушайте любимые треки и подкасты на Яндекс Музыке! 60 дней бесплатно</div>
+                <img src="img/AD.jpg" title="Реклама" alt="Реклама"></a>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+        <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script><!--Jquery-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!--Библиотека с анимацией-->
+        <script>
+            /*Кнопка "Наверх"*/
+            $(function(){
+                $('#btn-up').click(function(){
+                    $('html, body').animate({scrollTop: 0}, 800);
+                    return false;
+                });
+            });
+
+            /*Анимация*/
+            AOS.init();
+
+            /*Навигация*/
+            $('.navigate').bind("click", function(e) {
+                var anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $(anchor.attr('href')).offset().top - 180
+                }, 500);
+                e.preventDefault();
+            });
+
+            /*Аккордеон*/
+            new ItcAccordion(document.querySelector('.accordion'), {
+                alwaysOpen: false
+            });
+
+            /*Всплывающая подсказка*/
+            $(function(){
+                $("[data-tooltip]").mousemove(function (eventObject) {
+                    $data_tooltip = $(this).attr("data-tooltip");
+                    $("#tooltip").html($data_tooltip)
+                        .css({ 
+                        "top" : eventObject.pageY + 5,
+                        "left" : eventObject.pageX + 5
+                    })
+                    .show();
+                })
+                .mouseout(function () {
+                    $("#tooltip").hide()
+                    .html("")
+                    .css({
+                        "top" : 0,
+                        "left" : 0
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
